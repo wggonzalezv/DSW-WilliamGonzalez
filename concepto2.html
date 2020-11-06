@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <title> Fase 3: Construcción: Crear un OVI en formato WEB con HTML5 y CSS3</title>
+    <link rel="stylesheet" type="text/css" href="estilos3.css">
+</head>
+<body>
+    <div class="General">
+       <header class="encabezado">
+            <h1>Fase 3: Construcción: Crear un OVI en formato WEB con HTML5 y CSS3</h1>
+            <div id="header">
+                <nav>
+                    <ul class="nav">
+                        <li><a href="index.html">Inicio</a></li>
+                        
+                    </ul>		 
+                </nav>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+		</header>
+                <div>
+                    <br>
+                    <br>
+                    <br>
+
+                     <h3>Display: inline, block, inline-block</h3> 
+                      <p>Todas las etiquetas del lenguaje HTML se pueden clasificar en etiquetas de línea o de bloque. 
+                        Una etiqueta de línea es aquella que ocupa el espacio mínimo necesario en horizontal, y permite que otro elemento se coloque a su lado. En cambio una etiqueta de bloque, ocupa todo el ancho disponible y no permite que otro elemento se coloque a su lado (aunque aparentemente tenga lugar suficiente).<br><br>
+
+                          Etiquetas de línea (las más usadas): <code>&lt;a&gt;</code>,<code>&lt;span&gt;</code>,<code>&lt;strong&gt;</code>,<code>&lt;img&gt;</code>,<code>&lt;input&gt;</code>,<code>&lt;code&gt;</code><br>
+
+                          Etiquetas de bloque (las más usadas):<code>&lt;h1&gt;</code>,<code>&lt;h2&gt;</code>,<code>&lt;h3&gt;</code>,<code>&lt;p&gt;</code>,<code>&lt;ul&gt;</code>,<code>&lt;li&gt;</code>, <code>&lt;div&gt;</code>,<code>&lt;header&gt;</code>,<code>&lt;nav&gt;</code>,<code>&lt;section&gt;</code>,<code>&lt;article&gt;</code>,<code>&lt;footer&gt;</code>,<code>&lt;form&gt;</code>,<code>&lt;table&gt;</code><br><br>
+
+                          <strong>Ejemplo 1:</strong><br><br>
+
+                            Si quiero definir el ancho y el alto de un botón tengo que usar la propiedad display:block, si no lo hago, la etiqueta <code>a&gt;</code> (que es de línea) ignorará por completo las medidas de width y height.<br><br>
+
+                            <strong>a {display:block; width:120px; height: 80px}</strong>
+                            <br>
+                            <br>
+
+                        <strong>Ejemplo 2:</strong><br><br>
+
+                        Si necesito crear dos columnas a partir de dos etiquetas <code>&lt;article&gt;</code> (que es de bloque), tengo que usar la propiedad display:inline-block porque necesito que se comporte como línea para que se coloque una al lado de la otra, pero a su vez necesito que se comporte como bloque para que acepte el valor del ancho de la columna.<br><br>
+
+                        <strong>article {display:inline-block; width:45%;}</strong><br>
+
+                        <h3>Centrar elementos de línea y de bloque</h3><br>
+                        Para centrar elementos de bloque, es necesario definir el ancho, y los márgenes izquierdo y derecho en auto para que el navegador calcule el margen automáticamente: margin: 0 auto<br><br>
+
+                        <strong>Ejemplo: centrar una div class="container"</strong><br>
+
+                        <strong>.container {max-width:1200px; margin:0 auto}</strong><br><br>
+
+                        Para centrar elementos de línea como pueden ser las imágenes de un catálogo o los links de un menú, es necesario agregar text-align:center al elemento que los contiene.<br>
+
+                        <strong>Ejemplo:</strong><br>
+
+                        <strong>.catalogo {text-align: center} </strong>
+                        <strong>.catalogo img {}</strong>
+
+                      <br>
+                      <br>
+                      <br>
+
+		        </div>
+		        
+		        <h4>Bibliografía</h4>
+                <ul>
+                    <li>Alarcón, J. M. (s.f.). ¿Qué diferencias hay entre display:block, inline e inline-block en CSS? Recuperado el Septiembre de 2020, de https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx.</li>
+                    <li>Chuburu, L. (s.f.). Elementos de línea y de bloque. Recuperado el Septiembre de 2020, de https://www.laurachuburu.com.ar/tutoriales/linea-y-bloque.php.</li>
+                    <li>Informaticapc. (s.f.). Tutorial de CSS. Recuperado el Septiembre de 2020, de https://informaticapc.com/tutorial-css/. </li><br>
+                    <li>Video : ¿Qué diferencias hay entre display:block, inline e inline-block en CSS? <a href="https://youtu.be/DU9kY8kOu4s">https://youtu.be/DU9kY8kOu4s</a><br></li>
+                </ul>
+                
+		
+		<footer>
+			<a href="https://www.unad.edu.co/">https://www.unad.edu.co/</a>			
+			<h5>Todos los derechos de autor: William Gerardo Gonzalez Vivas</h5>
+        </footer>
+    </div>
+</body>
+</html>

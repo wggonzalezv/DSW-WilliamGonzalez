@@ -1,0 +1,94 @@
+
+body{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, verdana;
+    color:#fff;
+    background-color:  #005883;
+/*    background-color:  #F0B429;*/
+
+}
+
+.encabezado{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, verdana;
+    color:#fff;
+    background-color: #F0B429 ;
+	background-position: left;
+	background-attachment: contain;
+	background-size: cover;
+    background-position: center;    
+}
+
+.encabezado h1{
+	text-align: center;	
+	color: #fff;
+}
+
+.datospersonales{
+	height: 200px;
+	display: flex;
+/*    display: inline-block;*/
+	justify-content: center;
+}
+
+h2{
+	font-size: 20px;
+	text-align: center;	
+}
+
+#header {
+    margin: auto;
+    width: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, verdana;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+
+.nav li a {
+	
+	background-color: #005883 ;
+	color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+	display: block;
+}
+
+.nav > li {
+    float: left;
+}
+
+.nav li a:hover{
+	background-color: # color: #434343;
+}
+
+.nav li ul {
+    display:none;
+    position: absolute;
+    min-width: 140px;
+    
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+footer{
+    display: flex;
+	align-items: center;    
+}
+
+footer a{
+	color: #F0B429;
+	flex: 1 1 45%;
+	padding: 0 0 0 100px;
+	font-size: 10px;
+}
+
+footer h5{
+	color: #F0B429;
+	font-size: 15px;
+	flex:1 1 45%;
+}
+
+

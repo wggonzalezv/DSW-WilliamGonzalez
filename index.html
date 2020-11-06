@@ -2,81 +2,91 @@
 <html lang="es-ES">
 <head>
     <meta charset="UTF-8">
-    <title>– Fase 2: Diseño: Crear el Guión y la maquetación para un OVI.</title>
-    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title> Fase 3: Construcción: Crear un OVI en formato WEB con HTML5 y CSS3</title>
+    <link rel="stylesheet" type="text/css" href="estilos3.css">
 </head>
 <body>
     <div class="General">
        <header class="encabezado">
-            <h1>Fase2 Diseño: Crear el Guión y la maquetación para un OVI</h1>
-            <div class="datospersonales">
-                <ul><h2>Datos personales</h2>
-				    <li>Nombre: William Gerardo Gonzalez Vivas</li>
-				    <li>Cedula: 79.407.261</li>
-				    <li>Facultad: Ingenieria en sistemas</li>
-				    <li>Grupo: 301122-9 </li>
-				    <li>Correo electronico:wigegovi@gmail.com</li>
-				</ul>
+            <h1>Fase 3: Construcción: Crear un OVI en formato WEB con HTML5 y CSS3</h1>
+            <div id="header">
+                <nav>
+                    <ul class="nav">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="">Conceptos</a>
+                            <ul>
+                                 <li><a href="concepto1.html">CSS-Contenido</a></li>
+                                 <li><a href="concepto2.html">Display</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Recursos</a>
+                            <ul>
+                                 <li><a href="recurso1.html">Recursos1</a></li>
+                                 <li><a href="recurso2.html">Recursos2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Autoevaluaciones</a>
+                            <ul>
+                                 <li><a href="autoevaluacion1.html">Autoevaluaciones1</a></li>
+                                 <li><a href="autoevaluacion2.html">Autoevaluaciones2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Autor.html">Autor</a></li>
+                    </ul>		 
+                </nav>
+                <br>
+                <br>
+                <br>
+                <br>
             </div>
-            <nav>
-				<a href="index.html">Inicio</a>
-				<a href="planning.html">Planificación</a>
-            </nav>
+            
+            
 		</header>
 		
-		<p>
-		    <br>
-		    <br>
-		    <br>
-		<h2>PROGRAMACION DE SITIOS WEB - (301122A_764)</h2> 
-		    <br>
+		
+		<div>
             <br>
             <br>
-            <br>  
+                
+		    <h3>Introducción</h3>
+		      <p>Los estilos CSS son usados para configurar una página web definiendo la apariencia y colocación de sus diferentes elementos, ofreciendo la ventaja de que si modificamos un estilo se actualizarán automáticamente todos los elementos a los que se haya aplicado.<br>
 
+		      Podemos incluir estilos CSS en nuestras páginas web de dos formas:<br>
+                    <ul>
+                        <li>Usando la etiqueta HTML<code>&lt;style&gt;</code> dentro de <code>&lt;head&gt;</code>.</li>
+                        <li>Creando un archivo de Hoja de Estilos CSS (normalmente con extensión .css) y enlazándolo a la página web con la etiqueta <code>&lt;link&gt;</code>.</li>
+                    </ul><br>
+    
+                Lo recomendable es tenerlos en un archivo externo, puesto que con ello separamos el contenido (el archivo .html) de la presentación (el archivo .css): de este modo podremos usar la misma Hoja de Estilos CSS desde varias páginas web sin tener que repetir código en cada una de ellas.
+                <br>               
+            
+                Para acceder a un elemento HTML desde CSS , se crea un selector y luego se definen los atributos deseados entre llaves. Podemos utilizar tres (3) tipos de selectores para acceder a elementos HTML, estos son: <br>
+                <ul>
+                    <li>Selectores de etiqueta:  Utilizados para acceder a una determinada etiqueta HTML todas las veces que aparezca en la página web, simplemente tenemos que escribirla como selector.</li>
+                    <li>Selector de ID : Utilizados  para acceder a una etiqueta HTML que tiene asignado un id (no debe haber más de una con el mismo en el código HTML).                    
+                    </li>
+                    <li>Selector de clase:  Utilizados para acceder a las etiquetas HTML que tienen asignada una determinada clase CSS.</li>
+                </ul><br>
+                Otra forma de acceder a un elemento HTML es usando un selector descendente como vemos en el código fuente del siguiente ejemplo:
 
+                También podemos agrupar selectores separándolos con comas<br>
+        </div>
+                   
+		<div>
+		    <h3>Objetivos</h3>
+		    <p>Crear  estilos a página web escrita en HTML aplicando  las propiedades básicas de la hoja de estilos CSS (Cascade Sheet Style). <br><br></p>
+		
+		    <h3>Objetivos Especificos:</h3>
 
-        <h2>Fase 2: Diseño: Crear el Guión y la maquetación para un OVI</h2> <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-
-
-
-        <h2>Presentado por:</h2>
-        <h2>William Gerardo González Vivas</h2>
-        <h2>C.C 79407261</h2>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-
-
-
-
-
-        <h2>Presentado a: </h2>
-        <h2>Ing. William Enrique Palencia</h2>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-
-
-
-
-
-
-
-
-        <h2>Universidad Nacional Abierta y a Distancia</h2>
-        <h2>Septiembre 2020</h2>
-
+            <ul>
+                <li>Identificar los elementos o etiquetas HTML de línea y de bloque de una página web escrita en lenguaje HTML.</li>
+                <li>Identificar las propiedades básicas de la hoja de estilos CSS.</li>
+                <li>Identificar la aplicación de la propiedad Display:Inline, block,inline-block en una página web escrita en HTML </li><br>
+            </ul>
+		</div>
+		
+		
+		
 		<footer>
 			<a href="https://www.unad.edu.co/">https://www.unad.edu.co/</a>			
 			<h5>Todos los derechos de autor: William Gerardo Gonzalez Vivas</h5>

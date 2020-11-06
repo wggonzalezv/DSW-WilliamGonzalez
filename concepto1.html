@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <title> Fase 3: Construcción: Crear un OVI en formato WEB con HTML5 y CSS3</title>
+    <link rel="stylesheet" type="text/css" href="estilos3.css">
+</head>
+<body>
+    <div class="General">
+       <header class="encabezado">
+            <h1>Fase 3: Construcción: Crear un OVI en formato WEB con HTML5 y CSS3</h1>
+            <div id="header">
+                <nav>
+                    <ul class="nav">
+                        <li><a href="index.html">Inicio</a></li>
+                        
+                    </ul>		 
+                </nav>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+		</header>
+		
+		<div>
+		    
+		  
+		<h3>Contenido:</h3>
+		    <p>Las propiedades básicas de CSS son las siguientes: Bordes,Contorno,Cursor,Dimensiones,Enlaces,Fondo,Listas,Márgenes,Relleno,Tablas,Texto y fuentes<br>
+		    A continuación damos una descripción resumida de cada una de ellas
+ <br><br>
+		    <h4>Bordes</h4>
+            
+		        Las principales propiedades CSS que nos permitirán configurar el borde de los elementos HTML son: border-width (ancho del borde), border-style (estilo del borde) y border-color (color del borde).
+		        
+		    <h4>Contorno</h4>
+            
+		        El contorno de un elemento HTML no es lo mismo que el borde y tampoco forma parte del elemento en sí, aunque también podremos configurarlo usando las siguientes propiedades CSS:<br>
+		        <ul>
+		            <li>outline-color: color del contorno</li>
+		            <li>outline-style: estilo del contorno, pudiendo tener uno de los siguientes valores dotted, dashed, solid, double, groove, none, ridge, inset, outset.</li>
+		            <li>outline-width: ancho del contorno, pudiendo indicarse su valor en píxels o con thin, medium, thick</li><br>
+		       </ul>
+		       También podemos usar la propiedad outline con la cual podemos establecer todas las configuraciones anteriores en una sola línea manteniendo el siguiente orden: color, estilo, grosor.<br>
+		       
+		       <h4>Cursor</h4>
+            
+		        Con la propiedad cursor es posible cambiar el tipo de cursor del ratón al pasarlo sobre un elemento, pudiendo asignársele uno de los siguientes valores:crosshair, default, pointer, move, e-resize, ne-resize, nw-resize, n-resize, se-resize, sw-resize, s-resize, w-resize, text, wait, help.<br>
+		    
+		        <h4>Dimensiones</h4>
+            
+		        Para definir el alto de un elemento HTML se usa la propiedad height, y width para configurar el ancho. También podemos indicar un ancho y alto mínimos con min-width y min-height, así como un ancho y alto máximos con max-width y max-height.<br>
+		        
+		        <h4>Enlaces</h4>
+            
+		        Para configurar el aspecto visual de losenlaces podemos usar cualquier propiedad CSS, como color, font-family, etc.
+                Asimismo, para definir el color de un enlace dependiendo de sus diferentes estados podemos usar:
+                <ul>
+                    <li>a:link: enlace no visitado</li>
+                    <li>a:visited: enlace visitado.</li>
+                    <li>a:hover: al situar el cursor del ratón encima del enlace</li>
+                    <li>a:active: enlace seleccionado</li>
+                </ul>
+                IMPORTANTE: si configuramos varios aspectos de los enlaces hemos de seguir el siguiente orden:
+                <ul>
+                    <li>a:hover debe definirse después de a:link y a:visited</li>
+                    <li>a:active debe definirse después de a:hover</li>
+                </ul>
+
+                <h4>Fondo (background)</h4>
+                
+                Con la propiedad background-color podemos definir un color de fondo para un elemento HTML (indicando el color por su nombre, o en formato hexadecimal o RGB). También podemos utilizar las siguientes propiedades referentes a imágenes:
+    
+		        
+                <ul>
+                    <li>background-image: Permite establecer una imagen de fondo</li>
+                    <li>background-repeat: Indica cómo se repetirá la imagen (por defecto se repetirá ocupando todo el ancho y alto del elemento).
+                        Puede tomar como valor repeat-x (se repetirá horizontalmente), repeat-y (se repetirá verticalmente) o no-repeat (se mostrará una sola vez)</li>
+                    <li>background-position:Indica la posición en la que debe mostrarse la imagen respecto al elemento HTML en que se encuentra.
+                        Puede indicarse principalmente estableciendo la posición horizontal y vertical en píxels (siendo '0px 0px' la esquina superior izquierda), porcentajes (siendo '0% 0%' la esquina superior izquierda) o bien usando las palabras: left top, left center, left bottom, right top, right center, right bottom, center top, center center o center bottom.</li>
+                    <li>background: permite definir todas las propiedades anteriores en una sola línea</li>
+                </ul>
+                
+                <h4>Listas</h4>
+                
+                Las principales propiedades CSS que podemos usar para configurar una lista son:
+                  <ul>
+                    <li>list-style-image: Seleccionar una imagen como marcador de cada elemento de la lista</li>
+                    <li>list-type-position: Indica si el símbolo o imagen en los elementos de la lista debe mostrarse dentro o fuera del flujo de su contenido.
+                    Principalmente puede tener como valor: inside (el símbolo se mostrará en el flujo de contenido de la lista, con lo que se insertará una tabulación extra) o outside (el símbolo se mostrará fuera del flujo de contenido).</li>
+                    <li>list-style-type:
+                    Definir el estilo en que será mostrado cada elemento. Algunos de los valores que pueden asignársele son:</li>
+                   <ul>
+                       <li>circle: círculos</li>
+                       <li>decimal: números enteros</li>
+                       <li>decimal-leading-zero: números, rellenando con ceros a la izquierda (01,02,03,04,05...)</li>
+                       <li>disc: mostrará un círculo con un relleno</li>
+                       <li>lower-alpha: letras en minúsculas (a,b,c,d,e...)</li>
+                       <li>lower-roman: números romanos usando caracteres en minúsculas (i, ii, iii, iv, v...)</li>
+                       <li>none: ningún simbolo o caracter</li>
+                       <li>square: muestra un cuadradito</li>
+                       <li>upper-alpha: letras en mayúscula (A,B,C,D,E...)</li>
+                       <li>upper-roman: números romanos usando caracteres en mayúsculas (I, II, III, IV, V...)</li>
+                    </ul>
+                    </ul>
+                    También disponemos de la propiedad list-style, con la que podemos definir todas las opciones anteriores con el siguiente orden: tipo de la lista, posición, imagen.
+                    
+                    
+            <h4>Márgenes</h4>
+            
+		      Para configurar los márgenes de un elemento disponemos de las propiedades margin-top (margen superior), margin-right (derecho), margin-bottom (abajo) y margin-left (inferior).
+            En su lugar, también podemos usar margin para definir los márgenes en el siguiente orden: superior, derecho, inferior e izquierdo <br>
+		    
+		  <h4>Relleno</h4>
+            
+		      Podemos configurar el relleno de un elemento (sus márgenes internos) con padding-top (relleno superior), padding-right (derecho), padding-bottom (abajo) y padding-left (inferior).
+            En su lugar, también podemos usar la propiedad padding para definirlo en el siguiente orden: superior, derecho, inferior e izquierdo.<br>
+                    
+		  <h4>Tablas</h4>
+                
+            Podemos usar las siguientes propiedades CSS para configurar varios aspectos visuales de las tablas:
+    		        
+                <ul>
+                    <li>border-collapse: indica si el borde debe mostrar contraído, sin espacio. De no declararse <code>&lt;doctype&gt;</code> pueden obtenerse resultados inesperados.Admite los valores: collapse y separate.</li>
+                    <li>border-spacing: espacio entre el borde y las celdas en píxels, centímetros, etc</li>
+                    <li>caption-side: indica en qué posición debe mostrarse el título de la tabla si lo hemos indicado usando la etiqueta HTML <code>&lt;caption&gt;</code>, siendo top (parte superior) y bottom (parte inferior) los valores permitidos.</li>
+                    <li>empty-cells: indica si debe mostrarse u ocultarse el borde y el fondo de las celdas vacías, siendo los valores permitidos hide (ocultar) y show (mostrar).</li>
+                </ul>
+                
+                <h4>Texto y fuentes</h4>
+                
+                Con CSS es posible configurar diversos aspectos del texto, siendo las propiedades más importantes y soportadas por los distintos navegadores web:
+                  <ul>
+                    <li>color: color del texto</li>
+                    <li>text-align: alineación horizontal del texto, pudiendo tener como valor: left (izquierda), center (centrado), right (derecha) o justify (justificado).</li>
+                    <li>text-decoration: define un estilo decorativo para el texto:</li>
+                   <ul>
+                       <li>none: no se aplica decoración al texto.</li>
+                       <li>underline: subrayado normal (bajo el texto).</li>
+                       <li>overline: subrayado en la parte superior</li>
+                       <li>line-through: subrayado en medio del texto (tachado).</li>
+                       <li>blink: muestra el texto parpadeante (no soportado en Internet Explorer, Google Chrome o Safari)</li>
+                       <li>inherit: mostrará el texto según se haya indicado en el elemento padre (por ejemplo, en un <code>&lt;span&gt;</code> que se encuentra dentro de un <code>&lt;div&gt;</code>, se mostraría según lo indicado en éste).</li>
+                    </ul>
+                       
+                    <li>text-indent: permite configurar la sangría del texto.</li>
+                    <li>text-transform: muestra el texto en mayúsculas y/o minúsculas, pudiendo tener los siguientes valores:</li>
+                      <ul>
+                       <li>none: muestra el texto tal cual se escribió</li>
+                       <li>capitalize: convierte a mayúsculas mostrando en mayúsculas el primer caracter de cada palabra</li>
+                       <li>uppercase: convierte el texto a mayúsculas.</li>
+                       <li>lowercase: convierte el texto a minúsculas</li>
+                       <li>inherit: mostrará el texto según se haya indicado en el elemento padre (por ejemplo, en un <code>&lt;span&gt;</code> que se encuentra dentro de un <code>&lt;div&gt;</code>, se mostraría según lo indicado en éste).</li>
+                    </ul>
+                    </ul>
+                    
+                    Para configurar aspectos referentes al tipo de letra usado en la página web o en determinadas etiquetas HTML de la misma, usaremos propiedades CSS tales como:
+                    <ul>
+                        <li>font-family: indica el tipo de letra a usar, debiendo ponerse entre comillas en caso de que el nombre esté compuesto por varias palabras. Puede tener como valor el nombre de una familia de fuentes (times, courier, arial, etc.) o el de una familia genérica (serif, sans-serif, cursive, etc.). Hay que tener en cuenta que el usuario debe tener el tipo de letra instalada en su sistema, y por ello es recomendable escogerlo entre las que se instalan por defecto en los sistemas operativos (como 'Arial' y 'Times'). Si se indican varios tipos de letra y el navegador web no soporta uno, se intentará usar el siguiente.</li>
+                        <li>font-size: tamaño del texto indicado principalmente en píxels, puntos, porcentaje o 'em'.</li>
+                        <li>font-weight: grosor del texto, siendo bold (negrita) y normal los principales valores que puede tomar.</li>
+                        <li>font-style: estilo del tipo de letra, pudiendo tener como valor normal (texto normal), italic (itálica), oblique (como itálica, aunque soportado en menos navegadores web) o inherit (heredará el estilo de su elemento padre, dentro del que se encuentra).</li>
+                    </ul>
+                    Tenemos también la posibilidad de usar la propiedad font como combinación de las anteriores, indicando por orden el grosor, tamaño y tipo de letra
+                    <br>
+		    
+		</div>
+		
+		<h4>Bibliografía</h4>
+                <ul>
+                    <li>Alarcón, J. M. (s.f.). ¿Qué diferencias hay entre display:block, inline e inline-block en CSS? Recuperado el Septiembre de 2020, de https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx.</li>
+                    <li>Chuburu, L. (s.f.). Elementos de línea y de bloque. Recuperado el Septiembre de 2020, de https://www.laurachuburu.com.ar/tutoriales/linea-y-bloque.php.</li>
+                    <li>Informaticapc. (s.f.). Tutorial de CSS. Recuperado el Septiembre de 2020, de https://informaticapc.com/tutorial-css/. </li><br>
+                    <li>Video : ¿Qué diferencias hay entre display:block, inline e inline-block en CSS? <a href="https://youtu.be/DU9kY8kOu4s">https://youtu.be/DU9kY8kOu4s</a><br></li>
+                </ul>
+		
+		<footer>
+			<a href="https://www.unad.edu.co/">https://www.unad.edu.co/</a>			
+			<h5>Todos los derechos de autor: William Gerardo Gonzalez Vivas</h5>
+        </footer>
+    </div>
+</body>
+</html>
