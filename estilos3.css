@@ -73,6 +73,17 @@ ul,ol {
     display:block;
 }
 
+.evaluacion {
+    text-align: center;	
+    background-color: #005883 ;
+    
+}
+
+.recursos {
+    text-align: center;	
+    background-color: #005883 ;
+    
+}
 footer{
     display: flex;
 	align-items: center;    
